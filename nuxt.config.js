@@ -22,7 +22,10 @@ module.exports = {
   /*
   ** Customize the progress-bar color
   */
-  loading: { color: '#fa923f', height: '4px', duration: 5000 },
+  loading: { 
+    color: '#fa923f', height: '4px', duration: 5000 
+  },
+
   loadingIndicator: {
     name: 'circle',
     color: '#fa923f'
@@ -49,8 +52,9 @@ module.exports = {
   modules: [
     '@nuxtjs/axios',
   ],
+
   axios: {
-    baseURL: process.env.BASE_URL || 'https://nuxt-blog.firebaseio.com',
+    baseURL: process.env.BASE_URL || 'https://nodejs-nuxt-default-rtdb.firebaseio.com',
     credentials: false
   },
 
@@ -66,9 +70,10 @@ module.exports = {
     }
   },
   env: {
-    baseUrl: process.env.BASE_URL || 'https://nuxt-blog.firebaseio.com',
-    fbAPIKey: 'AIzaSyB4uttLQU61vyIppX2Tqgh447CNFuW7Vjo'
+    baseUrl: process.env.BASE_URL || 'https://nodejs-nuxt-default-rtdb.firebaseio.com',
+    fbAPIKey: 'AIzaSyDBIUQeSTYZLvN4n0mJNmvsSign6IVLOFY'
   },
+  
   transition: {
     name: 'fade',
     mode: 'out-in'
